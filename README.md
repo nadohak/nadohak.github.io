@@ -1,2 +1,2 @@
-# nadohak.githup.io
+# nadohak.github.io
 Первый репозиторий на гитхаб
