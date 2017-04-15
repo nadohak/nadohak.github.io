@@ -1116,9 +1116,12 @@ div#loading {
 .section-heading .heading-width{
 	width:0.01%;
 }
-img.about-photo{
+.about-photo{
 	border-radius:50%;
 	max-width:100%;
+	height: 370px;
+	position: absolute;
+	left: 60px;
 }
 #about .left-services .service-item .fa-stack,
 #about .right-services .service-item .fa-stack
@@ -1273,16 +1276,22 @@ img.about-photo{
 	
 }
 .payment-img__visa {
-	padding: 0 50px 0 160px;
-	height: 100px;
+	padding: 0 50px 0 100px;
+	height: 150px;
 }
 .payment-img__wm {
 	height: 100px;
 	padding: 0 50px 0 0;
-
 }
 .payment-img__ya {
-	height: 100px;
+	height: 150px;
 	padding: 0 0 0 0;
-
+}
+.payment-img__qiwi {
+	padding: 30px 70px 0 90px;
+	height: 150px;
+}
+.payment-img__paypal {
+	height: 150px;
+	padding: 30px 50px 0 0;
 }
