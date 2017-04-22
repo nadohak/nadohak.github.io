@@ -1,0 +1,235 @@
+/*fonts*/
+=Raleway($weight, $size)
+	font: $weight $size Raleway sans-serif
+=Rockwell($weight, $size)
+	font: $weight $size Rockwell sans-serif
+@font-face
+	font-family: 'RockwellRegular'
+	src: url('fonts/RockwellRegular/RockwellRegular.eot')
+	src: url('fonts/RockwellRegular/RockwellRegular.eot?#iefix') format('embedded-opentype'), url('fonts/RockwellRegular/RockwellRegular.woff') format('woff'), url('fonts/RockwellRegular/RockwellRegular.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+@font-face
+	font-family: 'RockwellBoldItalic'
+	src: url('fonts/RockwellBoldItalic/RockwellBoldItalic.eot')
+	src: url('fonts/RockwellBoldItalic/RockwellBoldItalic.eot?#iefix') format('embedded-opentype'), url('fonts/RockwellBoldItalic/RockwellBoldItalic.woff') format('woff'), url('fonts/RockwellBoldItalic/RockwellBoldItalic.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+/*main settings*/
+.header
+	height: 147px
+.header-logo
+	padding-left: 0
+.header-logo-img
+	padding-bottom: 9px
+	padding-right: 18px
+.header-logo-text
+	+Rockwell(700, 30px)
+	line-height: 147px
+	display: inline-block
+.header-nav
+	margin-right: 25px
+.header-nav-list
+	+Raleway(400, 16px)
+	line-height: 125px
+	text-transform: uppercase
+	padding-left: 13px
+	.nav-item
+		display: inline
+		padding-right: 28px
+	.nav-item:last-child
+		padding-right: 0
+	.nav-item-link
+		color:  #202242
+		text-decoration: none
+	.nav-item-link:hover
+		color: #ffe13e
+.contact
+	color: #202242
+	text-align: center
+	padding-top: 40px
+	padding-left: 25px
+	padding-right: 0
+	border-left: 1px solid #ebebeb
+	height: 147px
+	width: 331px
+	&-text
+		+Raleway(600, 12px)
+		padding-bottom: 22px
+	&-chat
+		color: #202242
+		+Raleway(600, 14px)
+		background-color:  #ffe13e
+		width: 122px
+		height: 41px
+		line-height: 41px
+		margin-left: 36px
+		margin-right: 22px
+	&-phone
+		margin-top: 3px
+		color: #202242
+		font: 700 24px Lato sans-serif
+		line-height: 34px
+		border-left: 1px solid rgba(32, 34, 66, 0.31)
+		height: 34px
+		padding-left: 10
+	a
+		text-decoration: none
+	a:link
+		color: #202242
+	a:hover
+		color: #007C0A
+.content
+	margin: 0 auto
+	width: 1400px
+	text-align: center
+	background-image: url("../img/main-bg.jpg")
+	background-position-y: -140px
+	height: 794px
+	color:  #2d2d2d
+	&-title
+		color: #fff
+		+Rockwell(400,48px)
+		padding-top: 190px
+		margin-bottom: 0
+	&-subtitle
+		color: #fff
+		+Raleway(400,30px)
+		padding-top: 0
+		padding-bottom: 27px
+.content-img
+	padding-bottom: 61px
+.form
+	margin: 0 auto
+	background-color: rgba(255, 255, 255, 0.5)
+	width: 572px
+	height: 90px
+	&-input
+		+Raleway(400,18px)
+		width: 274px
+		border: none
+		padding-left: 22px
+		-webkit-margin-start: 1px
+	&-domain
+		+Raleway(700,18px)
+		background-color: #ffe13e
+		width: 108px
+		line-height: 52px
+		-webkit-margin-start: -4px
+	&-check
+		+Raleway(700,14px)
+		color: #ffffff
+		background-color: #ffe13e
+		width: 154px
+		line-height: 56px
+		-webkit-margin-start: -3px
+		-webkit-margin-end: 0px
+	&-check:link
+		text-decoration: none
+	&-check:hover
+		color:  #2d2d2d
+	&-input, &-domain, &-check
+		height: 54px
+		display: inline-block
+.service
+	margin: 0 auto
+	width: 1400px
+	text-align: center
+	color:  #ffffff
+.webhost
+	float: left
+	padding-top: 116px
+	background-color: #202242
+	width: 700px
+	height: 653px
+	&-img
+		padding-bottom: 18px
+	&-title
+		+Raleway(700,36px)
+		padding-bottom: 0
+	&-text
+		+Raleway(400,14px)
+		line-height: 24px
+		padding-bottom: 36px		
+	&-link
+		+Raleway(700,18px)
+		color:  #ffffff
+		border: 2px solid #ffffff
+		padding: 19px 54px
+	&-link:link
+		text-decoration: none
+	&-link:hover
+		color: #F45C00
+		background-color: #fff
+		border: 2px solid #F45C00
+.domain
+	padding-top: 181px
+	padding-bottom: 56px
+	float: right
+	background-color: #ffe13e
+	width: 700px
+	height: 653px
+	&-img
+		padding-bottom: 42px
+	&-title
+		+Raleway(700,36px)
+		padding-bottom: 11px
+		-webkit-margin-after: 0px
+	&-text
+		+Raleway(400,14px)
+		line-height: 24px
+		padding-bottom: 36px
+	&-link
+		+Raleway(700,18px)
+		color:  #ffffff
+		border: 2px solid #ffffff
+		padding: 19px 54px
+	&-link:link
+		text-decoration: none
+	&-link:hover
+		color: #202242
+		background-color: #fff
+		border: 2px solid #202242
+.features
+	color:  #202242
+	margin: 0 auto
+	background: #fbf8f1 url("../img/features-bg-logo.svg") no-repeat bottom
+	width: 1400px
+	height: 700px
+	clear: both
+	text-align: center
+	padding-top: 47px
+	h2
+		+Raleway(700,48px)
+		margin-bottom: 16px
+	h3
+		+Raleway(400,24px)
+		margin-top: 0
+		margin-bottom: 82px
+	ul li
+		width: 20%
+	img
+		padding-bottom: 10px
+	ul li hr
+		border-top: 3px solid rgba(32, 34, 66, 0.5)
+		width: 69px
+		padding-bottom: 4px
+	ul
+		padding-left: 0
+	li
+		display: inline-block
+	h4
+		+Rockwell(400,30px)
+		color:  #f4d320
+		margin: 0
+		padding-bottom: 9px
+	p
+		+Raleway(400,14px)
+		line-height: 24px
+	
+	
+
+
+
+
+
