@@ -1,0 +1,133 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  font: 600 50px OpenSans sans-serif;
+  padding-top: 61px;
+}
+
+.span1 {
+  color: #fc6744;
+}
+
+.span2 {
+  color: #000000;
+}
+
+.span3 {
+  font: 400 16px 24px OpenSans sans-serif;
+  color: rgba(65, 65, 65, 0.7);
+}
+
+.container {
+  color: rgba(255, 255, 255, 0.8);
+  padding-top: 109px;
+  padding-top: 92px;
+}
+
+.block-1 {
+  background-color: #4eb2f7;
+  padding-top: 45px;
+  width: 262px;
+  height: 263px;
+  box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.21);
+}
+
+.block-2 {
+  background-color: #c049f8;
+  padding-top: 45px;
+  width: 262px;
+  height: 263px;
+  box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.21);
+}
+
+.block-3 {
+  background-color: #817eff;
+  padding-top: 39px;
+  width: 262px;
+  height: 263px;
+  box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.21);
+}
+
+.block-4 {
+  background-color: #f74770;
+  padding-top: 42px;
+  width: 262px;
+  height: 263px;
+  box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.21);
+}
+
+.block-title {
+  font: 600 20px OpenSans sans-serif;
+}
+
+.block-text {
+  font: 400 15px 22px OpenSans sans-serif;
+  padding-top: 6px;
+  padding-bottom: 30px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.flaticon-magnet::before, .flaticon-magnet::after {
+  font-family: Flaticon;
+  font-size: 43px;
+  font-style: normal;
+  margin-left: 0;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.flaticon-bug::before, .flaticon-bug::after {
+  font-family: Flaticon;
+  font-size: 44px;
+  font-style: normal;
+  margin-left: 0;
+  display: block;
+  padding-bottom: 9px;
+}
+
+.flaticon-gear::before, .flaticon-gear::after {
+  font-family: Flaticon;
+  font-size: 51px;
+  font-style: normal;
+  margin-left: 0;
+  display: block;
+  padding-bottom: 5px;
+}
+
+.flaticon-camera::before, .flaticon-camera::after {
+  font-family: Flaticon;
+  font-size: 46.4px;
+  font-style: normal;
+  margin-left: 0;
+  display: block;
+  padding-bottom: 8px;
+  -webkit-transform: rotate(-18.453deg);
+  -ms-transform: rotate(-18.453deg);
+  transform: rotate(-18.453deg);
+}
+
+.btn {
+  border-radius: 27px;
+  background-color: #ffffff;
+  box-shadow: 3px 5px 14px 0px rgba(20, 20, 21, 0.09);
+  width: 228px;
+  height: 55px;
+  line-height: 36px;
+  font: 400 16px 25px OpenSans sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  padding-right: 25px;
+}
+
+.flaticon-plus::before, .flaticon-plus::after {
+  font-family: Flaticon;
+  font-size: 16px;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 0;
+  padding-right: 17px;
+}
