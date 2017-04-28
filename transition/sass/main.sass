@@ -1,0 +1,224 @@
+/*mixins*/
+=haruhi_effect($color)
+	background-color: rgba(66,223,244,0.3)
+/*main*/
+body
+	background-color: #2F3238
+.haruhi
+	position: relative
+	top: 50px
+	left: 50%
+	transform: translateX(-50%)
+	margin: 0
+	height: 300px
+	width: 482px
+	cursor: pointer
+	z-index: 1
+	overflow: hidden
+	.haruhi-img
+		position: relative
+		height: 300px
+		top: 0
+		left: -50px
+		background-color: #29CDC7
+		z-index: 1
+		transition: all 1s
+	.haruhi-title
+		font-size: 35px
+		position: absolute
+		top: 160px
+		left: 35px
+		transform: translate3d(185%,0,0)
+		z-index: 3
+		color: rgb(255, 127, 30)
+		background-color: rgba(3,76,178,0.8)
+		padding: 0 10px
+		transition: all 1s
+	.haruhi-title::after
+		position: absolute
+		top: 40spx
+		left: 0
+		width: 100%
+		height: 4px
+		background: #000
+		content: ''
+		z-index: 3
+		transform: translate3d(-300%,0,0)
+		background-color: rgb(255, 127, 30)	
+		transition: all 1s
+	.haruhi-translate
+		font: 600 22px Raleway sans-serif
+		position: absolute
+		top: 240px
+		left: 20px
+		transform: translate3d(168%,0,0)
+		z-index: 3
+		color: rgb(255, 127, 30)
+		background-color: rgba(3,76,178,0.8)
+		padding: 3px 10px
+		word-spacing: 5px
+		transition: all 1s
+	.haruhi-translate::after
+		position: absolute
+		top: 0px
+		left: 0
+		width: 100%
+		height: 4px
+		background: #000
+		content: ''
+		z-index: 3
+		transform: translate3d(-277%,0,0)
+		background-color: rgb(255, 127, 30)	
+		transition: all 1s
+	.haruhi-effect
+		position: absolute
+		top: 0
+		left: 0
+		height: 300px
+		width: 482px
+		background-color: rgba(66,223,244,0)
+		z-index: 2
+		transition: all 1s
+.haruhi:hover
+	.haruhi-img
+		position: absolute
+		height: 300px
+		top: 0
+		left: 0
+		transition: all 1s
+	.haruhi-title
+		transform: translate3d(0,0,0)
+		transition: all 1.2s
+	.haruhi-translate
+		transform: translate3d(0,0,0)
+		transition: all 1.2s
+	.haruhi-title::after
+		transform: translate3d(0,0,0)
+		visibility: visible
+		transition: all 1.2s
+	.haruhi-translate::after
+		transform: translate3d(0,0,0)
+		transition: all 1.2s
+	.haruhi-effect
+		background-color: rgba(66,223,244,0.3)
+		transition: all 1.2s
+a
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 3
+	opacity: 0
+.nami
+	position: relative
+	// top: 100px
+	// left: 711px
+	top: 100px
+	left: 50%
+	transform: translateX(-50%)
+	margin: 0
+	height: 600px
+	width: 482px
+	background-color: #DCCFB8
+	cursor: pointer
+	z-index: 1
+	overflow: hidden
+	transition: all 1s
+	.nami-img	
+		position: absolute
+		height: 280px
+		top: 100px
+		left: 55px
+		border: outset 1px #6F6962
+		z-index: 1
+		-webkit-filter: sepia(50%)
+		transition: all 1s
+	.nami-effect
+		position: absolute
+		top: 0
+		left: 0
+		height: 300px
+		width: 482px
+		background-color: rgba(66,223,244,0)
+		z-index: 2
+		transition: all 2s
+	.nami-title
+		font-size: 90px
+		position: absolute
+		top: -75px
+		left: 35px
+		text-transform: uppercase
+		word-spacing: 500px
+		z-index: 3
+		color: #453630
+		// background-color: rgba(3,76,178,0.8)
+		padding: 0 10px
+		opacity: 1
+		transition: all 1s
+		transition: opacity 3s
+	.nami-text
+		font: 400 40px Raleway sans-serif
+		position: absolute
+		top: 350px
+		left: 55px
+		text-transform: uppercase
+		word-spacing: 35px
+		z-index: 3
+		color: #453630
+		transition: all 1s
+	.nami-name
+		font: 700 80px Raleway sans-serif
+		position: absolute
+		top: 350px
+		// left: 75px
+		left: 52%
+		transform: translateX(-50%)
+		text-transform: uppercase
+		letter-spacing: 30px
+		z-index: 3 
+		color: #453630
+		transition: all 1s
+	.nami-beri
+		position: absolute
+		top: 520px
+		left: 60px
+		height: 60px
+	.nami-reward
+		font: 400 50px Annie Use Your Telescope, cursive
+		position: absolute
+		top: 460px
+		left: 130px
+		height: 40px
+		letter-spacing: 10px
+.nami:hover
+	background-color: #c4a979
+	transition: all 3s
+	.nami-img
+		position: absolute
+		top: 40px
+		left: 55px
+		transform: rotate(-1080deg) scale(1.289)
+		-webkit-filter: sepia(20%)
+		transition: all 1.5s
+		border: none
+	// .nami-effect
+	// 	background-color: rgba(66,223,244,0.3)
+	// 	transition: all 1.2s
+	.nami-title
+		opacity: 0
+		transition: 1s
+	.nami-text
+		transform: translate3d(0,0,0)
+		transition: all 1.2s
+	.nami-name
+	.nami-beri
+	.nami-reward
+.mayer
+	position: absolute
+	top: 500px
+	left: 58px
+	width: 532px
+	
+	
+

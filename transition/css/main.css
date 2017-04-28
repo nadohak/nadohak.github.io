@@ -1,0 +1,282 @@
+/*mixins */
+/*main */
+body {
+  background-color: #2F3238;
+}
+
+.haruhi {
+  position: relative;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 0;
+  height: 300px;
+  width: 482px;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+}
+.haruhi .haruhi-img {
+  position: relative;
+  height: 300px;
+  top: 0;
+  left: -50px;
+  background-color: #29CDC7;
+  z-index: 1;
+  -webkit-transition: all 1s;
+          transition: all 1s;
+}
+.haruhi .haruhi-title {
+  font-size: 35px;
+  position: absolute;
+  top: 160px;
+  left: 35px;
+  -webkit-transform: translate3d(185%, 0, 0);
+          transform: translate3d(185%, 0, 0);
+  z-index: 3;
+  color: #ff7f1e;
+  background-color: rgba(3, 76, 178, 0.8);
+  padding: 0 10px;
+  -webkit-transition: all 1s;
+          transition: all 1s;
+}
+.haruhi .haruhi-title::after {
+  position: absolute;
+  top: 40spx;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #000;
+  content: "";
+  z-index: 3;
+  -webkit-transform: translate3d(-300%, 0, 0);
+          transform: translate3d(-300%, 0, 0);
+  background-color: #ff7f1e;
+  -webkit-transition: all 1s;
+          transition: all 1s;
+}
+.haruhi .haruhi-translate {
+  font: 600 22px Raleway sans-serif;
+  position: absolute;
+  top: 240px;
+  left: 20px;
+  -webkit-transform: translate3d(168%, 0, 0);
+          transform: translate3d(168%, 0, 0);
+  z-index: 3;
+  color: #ff7f1e;
+  background-color: rgba(3, 76, 178, 0.8);
+  padding: 3px 10px;
+  word-spacing: 5px;
+  -webkit-transition: all 1s;
+          transition: all 1s;
+}
+.haruhi .haruhi-translate::after {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #000;
+  content: "";
+  z-index: 3;
+  -webkit-transform: translate3d(-277%, 0, 0);
+          transform: translate3d(-277%, 0, 0);
+  background-color: #ff7f1e;
+  -webkit-transition: all 1s;
+          transition: all 1s;
+}
+.haruhi .haruhi-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 482px;
+  background-color: rgba(66, 223, 244, 0);
+  z-index: 2;
+  -webkit-transition: all 1s;
+          transition: all 1s;
+}
+
+.haruhi:hover .haruhi-img {
+  position: absolute;
+  height: 300px;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 1s;
+          transition: all 1s;
+}
+.haruhi:hover .haruhi-title {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: all 1.2s;
+          transition: all 1.2s;
+}
+.haruhi:hover .haruhi-translate {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: all 1.2s;
+          transition: all 1.2s;
+}
+.haruhi:hover .haruhi-title::after {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  visibility: visible;
+  -webkit-transition: all 1.2s;
+          transition: all 1.2s;
+}
+.haruhi:hover .haruhi-translate::after {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: all 1.2s;
+          transition: all 1.2s;
+}
+.haruhi:hover .haruhi-effect {
+  background-color: rgba(66, 223, 244, 0.3);
+  -webkit-transition: all 1.2s;
+          transition: all 1.2s;
+}
+
+a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  opacity: 0;
+}
+
+.nami {
+  position: relative;
+  top: 100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 0;
+  height: 600px;
+  width: 482px;
+  background-color: #DCCFB8;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-transition: all 1s;
+          transition: all 1s;
+}
+.nami .nami-img {
+  position: absolute;
+  height: 280px;
+  top: 100px;
+  left: 55px;
+  border: outset 1px #6F6962;
+  z-index: 1;
+  -webkit-filter: sepia(50%);
+  -webkit-transition: all 1s;
+          transition: all 1s;
+}
+.nami .nami-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 482px;
+  background-color: rgba(66, 223, 244, 0);
+  z-index: 2;
+  -webkit-transition: all 2s;
+          transition: all 2s;
+}
+.nami .nami-title {
+  font-size: 90px;
+  position: absolute;
+  top: -75px;
+  left: 35px;
+  text-transform: uppercase;
+  word-spacing: 500px;
+  z-index: 3;
+  color: #453630;
+  padding: 0 10px;
+  opacity: 1;
+  -webkit-transition: all 1s;
+          transition: all 1s;
+  -webkit-transition: opacity 3s;
+          transition: opacity 3s;
+}
+.nami .nami-text {
+  font: 400 40px Raleway sans-serif;
+  position: absolute;
+  top: 350px;
+  left: 55px;
+  text-transform: uppercase;
+  word-spacing: 35px;
+  z-index: 3;
+  color: #453630;
+  -webkit-transition: all 1s;
+          transition: all 1s;
+}
+.nami .nami-name {
+  font: 700 80px Raleway sans-serif;
+  position: absolute;
+  top: 350px;
+  left: 52%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-transform: uppercase;
+  letter-spacing: 30px;
+  z-index: 3;
+  color: #453630;
+  -webkit-transition: all 1s;
+          transition: all 1s;
+}
+.nami .nami-beri {
+  position: absolute;
+  top: 520px;
+  left: 60px;
+  height: 60px;
+}
+.nami .nami-reward {
+  font: 400 50px Annie Use Your Telescope, cursive;
+  position: absolute;
+  top: 460px;
+  left: 130px;
+  height: 40px;
+  letter-spacing: 10px;
+}
+
+.nami:hover {
+  background-color: #c4a979;
+  -webkit-transition: all 3s;
+          transition: all 3s;
+}
+.nami:hover .nami-img {
+  position: absolute;
+  top: 40px;
+  left: 55px;
+  -webkit-transform: rotate(-1080deg) scale(1.289);
+      -ms-transform: rotate(-1080deg) scale(1.289);
+          transform: rotate(-1080deg) scale(1.289);
+  -webkit-filter: sepia(20%);
+  -webkit-transition: all 1.5s;
+          transition: all 1.5s;
+  border: none;
+}
+.nami:hover .nami-title {
+  opacity: 0;
+  -webkit-transition: 1s;
+          transition: 1s;
+}
+.nami:hover .nami-text {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: all 1.2s;
+          transition: all 1.2s;
+}
+
+.mayer {
+  position: absolute;
+  top: 500px;
+  left: 58px;
+  width: 532px;
+}
