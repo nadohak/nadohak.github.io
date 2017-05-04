@@ -171,7 +171,7 @@ footer hr {
 }
 footer li {
   display: inline-block;
-  padding-right: 130px;
+  padding-right: 90px;
 }
 footer li:last-child {
   padding-right: 0;
