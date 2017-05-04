@@ -1,0 +1,181 @@
+/*Fonts */
+@font-face {
+  font-family: Panton;
+  src: url(css/Panton.otf);
+}
+/*Main */
+body {
+  width: 100%;
+}
+
+header {
+  height: 147px;
+  color: #363636;
+}
+header .title {
+  font: 700 24px Panton, serif;
+  width: 355px;
+  text-transform: uppercase;
+  padding-left: 176px;
+  padding-right: 947px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+header .title p {
+  margin: 0;
+  padding-top: 25px;
+}
+header .call-back {
+  font: 700 30px Panton, serif;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+header .call-back p {
+  margin-bottom: 15px;
+}
+header .call-back-link {
+  font-size: 26px;
+  border: 2px solid #282828;
+  border-radius: 10px;
+  padding: 10px 33px;
+  text-decoration: none;
+  color: #363636;
+}
+header .call-back-link:hover {
+  color: blue;
+}
+
+main nav {
+  font: 300 30px Panton, serif;
+  text-align: center;
+  height: 93px;
+  background-color: #25292d;
+}
+main ul {
+  margin: 0;
+  padding: 0;
+  line-height: 91px;
+}
+main ul a {
+  color: #ffffff;
+  text-decoration: none;
+}
+main ul a:hover {
+  color: blue;
+}
+main li {
+  list-style: none;
+  display: inline;
+  padding-right: 47px;
+  vertical-align: middle;
+}
+
+.content {
+  height: 1064px;
+  background: url("../img/header/	main_background.jpg") no-repeat fixed;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+.content h1 {
+  font: 100 80px Panton, serif;
+  margin: 0;
+  padding-top: 274px;
+  text-transform: uppercase;
+}
+.content h2 {
+  font: 700 40px Panton, serif;
+  margin: 0;
+  text-transform: uppercase;
+}
+.content h3 {
+  font: 600 24px Panton, serif;
+  margin: 0;
+  text-transform: uppercase;
+  margin-top: 31px;
+}
+.content h4 {
+  font: 600 24px Panton, serif;
+  margin: 0;
+  margin-top: 79px;
+  margin-bottom: 50px;
+}
+.content img {
+  position: absolute;
+  top: 850px;
+  left: 1200px;
+}
+.content .watch {
+  font: 700 30px Panton, serif;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  background-color: #059feb;
+  border-radius: 50px;
+  margin-top: 40px;
+  padding: 16px 33px;
+}
+.content .watch:hover {
+  color: blue;
+}
+.content p {
+  font: 500 24px Panton, serif;
+  padding-top: 150px;
+}
+.content .mouse {
+  position: absolute;
+  top: 1180px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+footer {
+  height: 700px;
+  text-align: center;
+  color: #363636;
+}
+footer h4 {
+  font: 900 36px Panton, serif;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+footer ul {
+  padding: 0;
+  padding-top: 50px;
+}
+footer img {
+  height: auto;
+  width: 120px;
+}
+footer .img {
+  width: 140px;
+}
+footer .padding {
+  padding-top: -100px;
+}
+footer h5 {
+  font: 600 26px Panton, serif;
+}
+footer p {
+  font: 600 18px Panton, serif;
+}
+footer hr {
+  width: 177px;
+  border: 3px solid #059feb;
+}
+footer li {
+  display: inline-block;
+  padding-right: 130px;
+}
+footer li:last-child {
+  padding-right: 0;
+}
+footer .text {
+  font: 600 24px Panton, serif;
+}
