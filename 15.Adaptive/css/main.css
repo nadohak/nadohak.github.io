@@ -1,0 +1,314 @@
+body {
+  margin: 0;
+}
+
+header {
+  height: 750px;
+  width: 100%;
+  background: url("../img/bg.jpg") no-repeat;
+  color: #fff;
+  box-sizing: border-box;
+}
+header .wrapper {
+  text-align: center;
+  padding-top: 50px;
+}
+header .wrapper .header-brand {
+  display: inline-block;
+  margin-left: 4.75%;
+}
+header .wrapper .header-brand .header-logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+header .wrapper .header-brand .header-logo img {
+  width: 100px;
+}
+header .wrapper .header-brand .header-text {
+  margin-left: 16px;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+header .wrapper .header-brand .header-text .span1 {
+  font: 800 18px P22UndergroundCYPro, serif;
+}
+header .wrapper .header-brand .header-text .span2 {
+  font: 100 12px P22UndergroundCYPro, serif;
+}
+header .wrapper .header-phone {
+  display: inline-block;
+  margin-left: 514px;
+  margin-left: 30%;
+}
+header .wrapper .header-phone a {
+  font: 100 15px P22UndergroundCYPro, serif;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  line-height: 49px;
+  width: 160px;
+  height: 49px;
+  vertical-align: middle;
+}
+header .wrapper .header-phone a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+header .wrapper .header-phone span {
+  font: 800 25px P22UndergroundCYPro, serif;
+  vertical-align: middle;
+  margin-left: 39px;
+}
+header h1 {
+  font: 800 37px P22UndergroundCYPro, serif;
+  color: #ffff33;
+  text-transform: uppercase;
+  padding-top: 12px;
+  padding-left: 96px;
+  text-align: center;
+}
+header .title-2 {
+  display: none;
+}
+header ul {
+  font: 300 20px P22UndergroundCYPro, serif;
+  color: #ffffff;
+  line-height: 35px;
+  padding-top: 148px;
+  padding-left: 470px;
+  padding-left: 24.48%;
+  padding-right: 53px;
+  padding-right: 2.76%;
+  display: inline-block;
+  vertical-align: top;
+}
+header ul li {
+  list-style-type: none;
+}
+header ul i {
+  padding-right: 10px;
+}
+header .form {
+  position: relative;
+  width: 420px;
+  height: 413px;
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+}
+header .form p {
+  font: 300 22px P22UndergroundCYPro, serif;
+  color: #333333;
+  text-align: center;
+  -webkit-margin-before: 46px;
+  -webkit-margin-after: 46px;
+}
+header .form div {
+  margin-bottom: 10px;
+}
+header .form i {
+  display: inline-block;
+  width: 59px;
+  height: 59px;
+  line-height: 56px;
+  background-color: #2F2F2F;
+  border-radius: 4px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  text-align: center;
+}
+header .form input {
+  font: 300 15px P22UndergroundCYPro, serif;
+  color: #333333;
+  line-height: 55px;
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #333333;
+  width: 239px;
+  padding-left: 20px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+header .form a {
+  display: block;
+  text-decoration: none;
+  width: 320px;
+  height: 55px;
+  background-color: #ffff33;
+  border-radius: 4px;
+  font-family: 300 15px P22UndergroundCYPro, serif;
+  color: #333333;
+  line-height: 55px;
+  margin: 0 auto;
+  box-shadow: 0 5px 0 #989800;
+}
+header .form a:hover {
+  background-color: #dbdb2b;
+}
+header .form .cash {
+  position: absolute;
+  top: 345px;
+  left: -210px;
+}
+
+.advantages {
+  width: 100%;
+  height: 800px;
+  background-color: #FCFCFC;
+  padding-top: 100px;
+}
+.advantages .advantages-wrap {
+  margin: 0 auto;
+  max-width: 1080px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.advantages .advantages-wrap .wrap-img {
+  border-radius: 50%;
+  background-color: #ffff33;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.advantages .advantages-wrap .inline-block {
+  display: inline-block;
+  vertical-align: text-top;
+  text-align: center;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 1300px) {
+  header .wrapper .header-phone {
+    margin-left: 20%;
+  }
+  header .title-1 {
+    display: none;
+  }
+  header .title-2 {
+    display: block;
+    font-size: 32px;
+    padding-left: 0;
+  }
+  header ul {
+    padding-left: 100px;
+    padding-left: 15%;
+    padding-right: 50px;
+    padding-right: 5%;
+  }
+  header .form {
+    width: 360px;
+  }
+  header .form img {
+    display: none;
+  }
+
+  .inline-block {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+@media (max-width: 1041px) {
+  header {
+    height: 850px;
+    text-align: center;
+  }
+  header .wrapper .header-brand {
+    display: block;
+    margin: 0 auto;
+    margin-left: 0px;
+    margin-bottom: 40px;
+  }
+  header .wrapper .header-phone {
+    display: block;
+    margin-left: 0%;
+  }
+  header h1 {
+    font-size: 30px;
+    padding-left: 0;
+  }
+  header ul {
+    padding-left: 6%;
+    width: 42%;
+    padding-right: 50px;
+    padding-right: 6%;
+    text-align: left;
+  }
+  header .form {
+    height: 280px;
+    max-width: 350px;
+    min-width: 300px;
+    width: 38%;
+    margin-top: 100px;
+  }
+  header .form img {
+    display: none;
+  }
+  header .form p {
+    display: none;
+  }
+  header .form .name {
+    margin-top: 40px;
+  }
+  header .form input {
+    width: 200px;
+  }
+  header .form a {
+    width: 280px;
+  }
+}
+@media (max-width: 768px) {
+  header .title-2 {
+    font-size: 30px;
+  }
+  header ul {
+    padding-left: 6%;
+    width: 42%;
+    padding-right: 50px;
+    padding-right: 6%;
+    text-align: left;
+  }
+  header .form {
+    height: 265px;
+    min-width: 275px;
+    margin-top: 100px;
+  }
+  header .form img {
+    display: none;
+  }
+  header .form p {
+    display: none;
+  }
+  header .form .name {
+    margin-top: 35px;
+  }
+  header .form input {
+    width: 170px;
+  }
+  header .form a {
+    width: 250px;
+  }
+}
