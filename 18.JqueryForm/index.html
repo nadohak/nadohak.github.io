@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQuery forms</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<main>
+		<div class="container">
+			<img class="img-1" src="img/img-1.png" alt="img-1">
+			<img class="img-2" src="img/img-2.png" alt="img-2">
+			<form id="form" action="thanks.html">
+				<h3>Сохрани свой аккаунт</h3>
+				<p>Получи бесплатно неограниченное количество<br>форм, вопросов и ответов.</p>
+				<div class="input-name">
+					<img src="img/username.svg" alt="Имя">
+					<input required type="text" name="name" class="form-control" id="input-name" placeholder="Имя или никнейм">
+					<hr>
+				</div>
+				<div class="input-email">
+					<img class="email" src="img/email.svg" alt="email">
+					<input required type="email" name="email" class="form-control" id="email" placeholder="Email">
+					<hr>
+				</div>
+				<div class="input-password">
+					<img src="img/password.svg" alt="password">
+					<input required type="password" class="form-control" name="password" id="password" placeholder="Пароль">
+					<hr>
+				</div>
+				<button class="btn" type="submit"><span>Сохранить</span><i class="fa fa-angle-right"></i></button>
+				<div class="sign-in">
+					<span>У вас уже есть аккаунт?</span><a href="#">Войти</a>
+				</div>
+			</form>
+		</div>
+	</main>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+	<script>
+			$('#form').validate({
+				rules: {
+					name: {
+						required: true,
+						minlength: 5
+					},
+					email: {
+						required: true,
+						email: true
+					},
+					// password: {
+					// 	required: true
+					// }
+				},
+				messages: {
+					name: {
+						required: 'Введите Ваше имя или никнейм!',
+						minlength: 'Не менее 5 символов.'
+					},
+					email: {
+						required: 'Пожалуйста, введите ваш email',
+						email: 'Введите корректный email адрес'
+					},
+					password: {
+						required: 'Пожалуйста, введите пароль'
+					}
+				}
+			});
+	</script>
+	
+</body>
+</html>
