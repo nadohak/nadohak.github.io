@@ -1,0 +1,214 @@
+body
+	margin: 0
+.modal-popup
+	font-size: 30px
+	font-weight: 900
+	position: absolute
+	top: 20px
+	left: 20px
+	color: #000
+	text-decoration: none
+	border-radius: 10px
+	background-color: #fff
+	padding: 8px 20px
+	&:hover
+		color: purple
+.popup
+	background-color: #fff
+	display: block
+	height: 400px
+	width: 300px
+	position: fixed
+	z-index: 9
+	top: 10%
+	left: 50%
+	transform: translateX(-50%)
+	text-align: center
+	color: #333
+	padding: 20px
+	display: none
+	h4
+		margin-top: 20px
+		font: 700 30px OpenSans, sans-serif
+	form
+		position: absolute
+		display: block
+		height: 400px
+		width: 340px
+		padding: 10px
+		text-align: center
+		top: 100px
+		left: 0
+		box-sizing: border-box
+		hr
+			width: 290px
+		div
+			img
+				display: inline-block
+				vertical-align: middle
+			input
+				display: inline-block
+				font: 400 20px OpenSans, sans-serif
+				color:  #7b7b7b
+				border: none
+				outline: none
+				margin-left: 20px
+				line-height: 50px
+				vertical-align: middle
+				width: 250px
+		.btn
+			font: 700 25px OpenSans, sans-serif
+			background-color: #82c5c3
+			width: 130px
+			height: 53px
+			line-height: 53px
+			border: none
+			outline: none
+			border-radius: 25px
+			color: #fff
+			cursor: pointer
+			margin-top: 30px
+			text-align: center
+		.btn:hover
+			background-color: #639392
+	&-overlay
+		display: none
+		position: fixed
+		z-index: 1
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		height: 100vh
+		width: 100vw
+		background-color: rgba(0,0,0,.5)
+	&-close
+		color: #333
+		font-size: 40px
+		position: absolute
+		top: 10px
+		right: 10px
+		text-decoration: none
+		transition: all 0.4s
+		&:hover
+			transform: rotate(360deg)
+			color: #333
+.error
+	display: block
+	font: 400 15px OpenSans, sans-serif
+	color: #ff7272
+	position: relative
+	top: 0
+	left: 0
+	text-align: left
+	margin-left: 55px
+#email-error
+	display: block !important
+
+/*Patterns - reusable parts of our design*/
+h1
+	text-align: center
+	color: #fff
+.cdn-btn
+	// position: absolute
+	// z-index: 1
+	display: block
+	height: 100vh
+	width: 100vw
+	background: url('../img/ergo_proxy.jpg') no-repeat center center
+.no-touch .cd-btn:hover
+/*Modal Window*/
+.cd-modal
+	position: fixed
+	z-index: 2
+	top: 0
+	left: 0
+	height: 100%
+	width: 100%
+	visibility: hidden
+	-webkit-transition: visibility 0s 0.6s
+	-moz-transition: visibility 0s 0.6s
+	transition: visibility 0s 0.6s
+.cd-modal svg
+	position: absolute
+	top: 0
+	left: 0
+.cd-modal svg > path
+	fill: rgb(72, 18, 73)
+.cd-modal .modal-close
+	/* 'X' icon */
+	position: absolute
+	z-index: 1
+	top: 20px
+	right: 5%
+	height: 50px
+	width: 50px
+	border-radius: 50%
+	background: rgba(0, 0, 0, 0.3) url(../img/cd-icon-close.svg) no-repeat center center
+	/* image replacement */
+	overflow: hidden
+	text-indent: 100%
+	white-space: nowrap
+	/* Force hardware acceleration*/
+	transform: translateZ(0)
+	visibility: hidden
+	opacity: 0
+	transform: scale(0)
+	transition: transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s
+.no-touch .cd-modal .modal-close:hover
+	background-color: rgba(0, 0, 0, 0.5)
+.cd-modal.modal-is-visible
+	visibility: visible
+	transition: visibility 0s 0s
+.cd-modal.modal-is-visible .modal-close
+	visibility: visible
+	opacity: 1
+	transition: transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s
+	transform: scale(1)
+
+.cd-modal-content
+	position: relative
+	height: 100vh
+	overflow: scroll
+	padding: 3em 5% 4em
+	opacity: 0
+	transform: translateY(50px)
+	transition: opacity 0.3s 0s, transform 0.3s 0s
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+.cd-modal-content p
+	color: #f2f2f2
+	line-height: 1.6
+	margin: 2em 0
+.cd-modal-content h4
+	color: #f2f2f2
+	font-size: 20px
+.modal-is-visible .cd-modal-content
+	opacity: 1
+	transform: translateY(0)
+	-webkit-overflow-scrolling: touch
+	transition: opacity 0.3s 0.3s, transform 0.3s 0.3s
+@media only screen and (min-width: 768px)
+	.cd-modal-content
+	padding: 3em 10% 4em
+ 
+	.cd-modal-content p
+	font-size: 2.4rem
+ 
+
+/*Cover Layer - hide main content when modal is fired*/
+.cd-cover-layer
+	position: fixed
+	z-index: 1
+	top: 0
+	left: 0
+	height: 100%
+	width: 100%
+	background-color: #f2f2f2
+	visibility: hidden
+	opacity: 0
+	transition: opacity 0.3s 0.3s, visibility 0s 0.6s
+.cd-cover-layer.modal-is-visible
+	opacity: 1
+	visibility: visible
+	transition: opacity 0.3s 0s, visibility 0s 0s
